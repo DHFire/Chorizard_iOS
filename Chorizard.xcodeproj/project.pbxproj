@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BC4B97F322DFBB1E007AB521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B97F222DFBB1E007AB521 /* AppDelegate.swift */; };
-		BC4B97F522DFBB1E007AB521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B97F422DFBB1E007AB521 /* ViewController.swift */; };
 		BC4B97F822DFBB1E007AB521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B97F622DFBB1E007AB521 /* Main.storyboard */; };
 		BC4B97FA22DFBB1E007AB521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B97F922DFBB1E007AB521 /* Assets.xcassets */; };
 		BC4B97FD22DFBB1E007AB521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B97FB22DFBB1E007AB521 /* LaunchScreen.storyboard */; };
+		BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980422DFBCC5007AB521 /* LoginViewController.swift */; };
+		BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */; };
+		BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */; };
+		CE21D421A6ED6BA6CCACFB6B /* Pods_Chorizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65CF429730DA5864B25203A /* Pods_Chorizard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19DEAC73D63C204E165BCDBD /* Pods-Chorizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorizard.debug.xcconfig"; path = "Target Support Files/Pods-Chorizard/Pods-Chorizard.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4B97EF22DFBB1E007AB521 /* Chorizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chorizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4B97F222DFBB1E007AB521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC4B97F422DFBB1E007AB521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC4B97F722DFBB1E007AB521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC4B97F922DFBB1E007AB521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B97FC22DFBB1E007AB521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4B97FE22DFBB1E007AB521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4B980422DFBCC5007AB521 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F65CF429730DA5864B25203A /* Pods_Chorizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorizard.release.xcconfig"; path = "Target Support Files/Pods-Chorizard/Pods-Chorizard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE21D421A6ED6BA6CCACFB6B /* Pods_Chorizard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		425D172B8CF7CDB0BC7809D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65CF429730DA5864B25203A /* Pods_Chorizard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC4B97E622DFBB1E007AB521 = {
 			isa = PBXGroup;
 			children = (
 				BC4B97F122DFBB1E007AB521 /* Chorizard */,
 				BC4B97F022DFBB1E007AB521 /* Products */,
+				CBF910C10359C71AF13D4762 /* Pods */,
+				425D172B8CF7CDB0BC7809D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +74,41 @@
 			isa = PBXGroup;
 			children = (
 				BC4B97F222DFBB1E007AB521 /* AppDelegate.swift */,
-				BC4B97F422DFBB1E007AB521 /* ViewController.swift */,
+				BC4B980622DFBCF6007AB521 /* Login */,
+				BC4B980722DFBD17007AB521 /* To-Do */,
 				BC4B97F622DFBB1E007AB521 /* Main.storyboard */,
 				BC4B97F922DFBB1E007AB521 /* Assets.xcassets */,
 				BC4B97FB22DFBB1E007AB521 /* LaunchScreen.storyboard */,
+				BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */,
 				BC4B97FE22DFBB1E007AB521 /* Info.plist */,
 			);
 			path = Chorizard;
+			sourceTree = "<group>";
+		};
+		BC4B980622DFBCF6007AB521 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B980422DFBCC5007AB521 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC4B980722DFBD17007AB521 /* To-Do */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */,
+			);
+			path = "To-Do";
+			sourceTree = "<group>";
+		};
+		CBF910C10359C71AF13D4762 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19DEAC73D63C204E165BCDBD /* Pods-Chorizard.debug.xcconfig */,
+				FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC4B980122DFBB1E007AB521 /* Build configuration list for PBXNativeTarget "Chorizard" */;
 			buildPhases = (
+				BFEFAD1C8DBC0119389EBBF1 /* [CP] Check Pods Manifest.lock */,
 				BC4B97EB22DFBB1E007AB521 /* Sources */,
 				BC4B97EC22DFBB1E007AB521 /* Frameworks */,
 				BC4B97ED22DFBB1E007AB521 /* Resources */,
+				ABE2EFD45EFF578BD1B16B87 /* [CP] Embed Pods Frameworks */,
+				C1FAA1D1E4A215E64027E284 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4B97FD22DFBB1E007AB521 /* LaunchScreen.storyboard in Resources */,
+				BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */,
 				BC4B97FA22DFBB1E007AB521 /* Assets.xcassets in Resources */,
 				BC4B97F822DFBB1E007AB521 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +181,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABE2EFD45EFF578BD1B16B87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chorizard/Pods-Chorizard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chorizard/Pods-Chorizard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEFAD1C8DBC0119389EBBF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chorizard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FAA1D1E4A215E64027E284 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chorizard/Pods-Chorizard-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chorizard/Pods-Chorizard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC4B97EB22DFBB1E007AB521 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4B97F522DFBB1E007AB521 /* ViewController.swift in Sources */,
+				BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */,
+				BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */,
 				BC4B97F322DFBB1E007AB521 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +417,7 @@
 		};
 		BC4B980222DFBB1E007AB521 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DEAC73D63C204E165BCDBD /* Pods-Chorizard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +436,7 @@
 		};
 		BC4B980322DFBB1E007AB521 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

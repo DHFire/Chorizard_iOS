@@ -1,0 +1,6 @@
+framework module Pods_Chorizard {
+  umbrella header "Pods-Chorizard-umbrella.h"
+
+  export *
+  module * { export * }
+}
