@@ -8,10 +8,13 @@
 
 
 import UIKit
+import GoogleSignIn
+import FirebaseAuth
+import FirebaseCore
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
     
@@ -19,11 +22,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        // Initialize sign-in
-        GIDSignIn.sharedInstance().clientID = "YOUR_CLIENT_ID"
-        GIDSignIn.sharedInstance().delegate = self
+     //   MyFirebase.shared.addUserListender(loggedIn: false)
+        GIDSignIn.sharedInstance()?.clientID = "742813388139-kd5uellk3shht02uq5bh58jke8d4j286.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.delegate = self
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
+    }
+    
+    //signin handler
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+            return
+        } else {
+            guard let authentication = user.authentication else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+            Auth.auth().signInAndRetrieveData(with: credential) { (result, error) in
+                if error == nil {
+                } else {
+                    print(error?.localizedDescription as Any)
+                }
+            }
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
