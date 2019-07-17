@@ -14,6 +14,9 @@
 		BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980422DFBCC5007AB521 /* LoginViewController.swift */; };
 		BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */; };
 		BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */; };
+		CBCC7EB822DFD2A400EA4F35 /* MyFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EB722DFD2A300EA4F35 /* MyFirebase.swift */; };
+		CBCC7EBA22DFD38800EA4F35 /* Kids.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EB922DFD38800EA4F35 /* Kids.swift */; };
+		CBCC7EBC22DFD39100EA4F35 /* Parents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EBB22DFD39100EA4F35 /* Parents.swift */; };
 		CE21D421A6ED6BA6CCACFB6B /* Pods_Chorizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65CF429730DA5864B25203A /* Pods_Chorizard.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		BC4B980422DFBCC5007AB521 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBCC7EB722DFD2A300EA4F35 /* MyFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirebase.swift; sourceTree = "<group>"; };
+		CBCC7EB922DFD38800EA4F35 /* Kids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids.swift; sourceTree = "<group>"; };
+		CBCC7EBB22DFD39100EA4F35 /* Parents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parents.swift; sourceTree = "<group>"; };
 		F65CF429730DA5864B25203A /* Pods_Chorizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorizard.release.xcconfig"; path = "Target Support Files/Pods-Chorizard/Pods-Chorizard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4B97F222DFBB1E007AB521 /* AppDelegate.swift */,
+				CBCC7EB622DFD28500EA4F35 /* FireBase */,
 				BC4B980622DFBCF6007AB521 /* Login */,
 				BC4B980722DFBD17007AB521 /* To-Do */,
 				BC4B97F622DFBB1E007AB521 /* Main.storyboard */,
@@ -99,6 +106,16 @@
 				BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */,
 			);
 			path = "To-Do";
+			sourceTree = "<group>";
+		};
+		CBCC7EB622DFD28500EA4F35 /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				CBCC7EB722DFD2A300EA4F35 /* MyFirebase.swift */,
+				CBCC7EB922DFD38800EA4F35 /* Kids.swift */,
+				CBCC7EBB22DFD39100EA4F35 /* Parents.swift */,
+			);
+			path = FireBase;
 			sourceTree = "<group>";
 		};
 		CBF910C10359C71AF13D4762 /* Pods */ = {
@@ -270,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCC7EBA22DFD38800EA4F35 /* Kids.swift in Sources */,
 				BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */,
 				BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */,
+				CBCC7EB822DFD2A400EA4F35 /* MyFirebase.swift in Sources */,
 				BC4B97F322DFBB1E007AB521 /* AppDelegate.swift in Sources */,
+				CBCC7EBC22DFD39100EA4F35 /* Parents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
