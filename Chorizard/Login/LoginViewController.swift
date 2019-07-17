@@ -17,6 +17,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func LoginButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "LoginSegue", sender: sender)
+        performSegue(withIdentifier: "ToMainStoryboard", sender: sender)
     }
 }
