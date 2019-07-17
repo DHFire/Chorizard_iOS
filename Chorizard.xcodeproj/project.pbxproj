@@ -14,6 +14,7 @@
 		BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980422DFBCC5007AB521 /* LoginViewController.swift */; };
 		BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */; };
 		BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */; };
+		BC4B980D22DFD15B007AB521 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980C22DFD15B007AB521 /* Login.storyboard */; };
 		CE21D421A6ED6BA6CCACFB6B /* Pods_Chorizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65CF429730DA5864B25203A /* Pods_Chorizard.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		BC4B980422DFBCC5007AB521 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC4B980C22DFD15B007AB521 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F65CF429730DA5864B25203A /* Pods_Chorizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorizard.release.xcconfig"; path = "Target Support Files/Pods-Chorizard/Pods-Chorizard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +78,6 @@
 				BC4B97F222DFBB1E007AB521 /* AppDelegate.swift */,
 				BC4B980622DFBCF6007AB521 /* Login */,
 				BC4B980722DFBD17007AB521 /* To-Do */,
-				BC4B97F622DFBB1E007AB521 /* Main.storyboard */,
 				BC4B97F922DFBB1E007AB521 /* Assets.xcassets */,
 				BC4B97FB22DFBB1E007AB521 /* LaunchScreen.storyboard */,
 				BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */,
@@ -88,6 +89,7 @@
 		BC4B980622DFBCF6007AB521 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				BC4B980C22DFD15B007AB521 /* Login.storyboard */,
 				BC4B980422DFBCC5007AB521 /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -96,6 +98,7 @@
 		BC4B980722DFBD17007AB521 /* To-Do */ = {
 			isa = PBXGroup;
 			children = (
+				BC4B97F622DFBB1E007AB521 /* Main.storyboard */,
 				BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */,
 			);
 			path = "To-Do";
@@ -107,7 +110,6 @@
 				19DEAC73D63C204E165BCDBD /* Pods-Chorizard.debug.xcconfig */,
 				FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +177,7 @@
 				BC4B97FD22DFBB1E007AB521 /* LaunchScreen.storyboard in Resources */,
 				BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */,
 				BC4B97FA22DFBB1E007AB521 /* Assets.xcassets in Resources */,
+				BC4B980D22DFD15B007AB521 /* Login.storyboard in Resources */,
 				BC4B97F822DFBB1E007AB521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
