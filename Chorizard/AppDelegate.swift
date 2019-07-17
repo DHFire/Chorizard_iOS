@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  Chorizard
@@ -8,10 +9,13 @@
 
 
 import UIKit
+import GoogleSignIn
+import FirebaseAuth
+import FirebaseCore
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
     
@@ -19,11 +23,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        // Initialize sign-in
-        GIDSignIn.sharedInstance().clientID = "YOUR_CLIENT_ID"
-        GIDSignIn.sharedInstance().delegate = self
+//        MyFirebase.shared.addUserListender(loggedIn: false)
+        GIDSignIn.sharedInstance()?.clientID = "919377381997-o6hk9phvtdh43n3asuq1l4r0idq04m3p.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.delegate = self
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
+    }
+    
+    //signin handler
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+            return
+        } else {
+            guard let authentication = user.authentication else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+            Auth.auth().signInAndRetrieveData(with: credential) { (result, error) in
+                if error == nil {
+                } else {
+                    print(error?.localizedDescription as Any)
+                }
+            }
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -46,8 +72,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        MyFirebase.shared.removeUserListener()
     }
     
     
 }
+
 
