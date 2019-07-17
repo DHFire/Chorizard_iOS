@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>742813388139-kd5uellk3shht02uq5bh58jke8d4j286.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.742813388139-kd5uellk3shht02uq5bh58jke8d4j286</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBWujc_pA2xiYbV0RV8WTAb-1Ga97DLwVU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>742813388139</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>HHSwift.Chorizard</string>
+	<key>PROJECT_ID</key>
+	<string>chorizard-7a225</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chorizard-7a225.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:742813388139:ios:be3a57e45c54338a</string>
+	<key>DATABASE_URL</key>
+	<string>https://chorizard-7a225.firebaseio.com</string>
+</dict>
+</plist>
