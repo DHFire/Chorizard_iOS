@@ -17,7 +17,6 @@ import Firebase
 class MyFirebase {
     
     static let shared = MyFirebase()
-    
     var db = Firestore.firestore()
     var currentAuthID = Auth.auth().currentUser?.uid
     var currentUser: User?
@@ -34,7 +33,7 @@ class MyFirebase {
                 self.userId = ""
                 DispatchQueue.main.asyncAfter(deadline: .now()) {
                     if loggedIn {
-                        //move to account
+                        //move to account 
                     } else {
                         //move to log in
                     }
@@ -48,7 +47,7 @@ class MyFirebase {
                         let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                         print("data already added: \(dataDescription)")
                     } else {
-                        //self.createData()
+                        self.createParentData()
                         print("document added to fireStore")
                     }
                     self.currentUser = user

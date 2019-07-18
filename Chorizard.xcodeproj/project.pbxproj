@@ -14,6 +14,7 @@
 		BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980422DFBCC5007AB521 /* LoginViewController.swift */; };
 		BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */; };
 		BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */; };
+		CBA66E0922DFFEFE00DD705E /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA66E0822DFFEFE00DD705E /* GoogleSignIn.swift */; };
 		CBCC7EBE22DFDDC800EA4F35 /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EBD22DFDDC800EA4F35 /* Kid.swift */; };
 		CBCC7EC022DFDDD000EA4F35 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EBF22DFDDD000EA4F35 /* Parent.swift */; };
 		CBCC7EC222DFDE1B00EA4F35 /* MyFirsebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7EC122DFDE1B00EA4F35 /* MyFirsebase.swift */; };
@@ -31,6 +32,7 @@
 		BC4B980422DFBCC5007AB521 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CBA66E0822DFFEFE00DD705E /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		CBCC7EBD22DFDDC800EA4F35 /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
 		CBCC7EBF22DFDDD000EA4F35 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		CBCC7EC122DFDE1B00EA4F35 /* MyFirsebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirsebase.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4B980422DFBCC5007AB521 /* LoginViewController.swift */,
+				CBA66E0822DFFEFE00DD705E /* GoogleSignIn.swift */,
 				CBCC7EC122DFDE1B00EA4F35 /* MyFirsebase.swift */,
 				CBCC7EBF22DFDDD000EA4F35 /* Parent.swift */,
 				CBCC7EBD22DFDDC800EA4F35 /* Kid.swift */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA66E0922DFFEFE00DD705E /* GoogleSignIn.swift in Sources */,
 				CBCC7EBE22DFDDC800EA4F35 /* Kid.swift in Sources */,
 				BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */,
 				BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */,
