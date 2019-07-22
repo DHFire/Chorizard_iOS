@@ -15,6 +15,8 @@
 		BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */; };
 		BC4B980B22DFC0A0007AB521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */; };
 		BC4B980D22DFD15B007AB521 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B980C22DFD15B007AB521 /* Login.storyboard */; };
+		BC6ED1D422E22B2A00AF54C6 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6ED1D322E22B2A00AF54C6 /* ToDoTableViewCell.swift */; };
+		BC6ED1D622E26B4A00AF54C6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6ED1D522E26B4A00AF54C6 /* DetailViewController.swift */; };
 		CE21D421A6ED6BA6CCACFB6B /* Pods_Chorizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65CF429730DA5864B25203A /* Pods_Chorizard.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		BC4B980A22DFC0A0007AB521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC4B980C22DFD15B007AB521 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BC6ED1D322E22B2A00AF54C6 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		BC6ED1D522E26B4A00AF54C6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F65CF429730DA5864B25203A /* Pods_Chorizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE26826277EFD8C400B60D85 /* Pods-Chorizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorizard.release.xcconfig"; path = "Target Support Files/Pods-Chorizard/Pods-Chorizard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				BC4B97F622DFBB1E007AB521 /* Main.storyboard */,
+				BC6ED1D322E22B2A00AF54C6 /* ToDoTableViewCell.swift */,
 				BC4B980822DFBD4A007AB521 /* ToDoTableViewController.swift */,
+				BC6ED1D522E26B4A00AF54C6 /* DetailViewController.swift */,
 			);
 			path = "To-Do";
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 				BC4B980522DFBCC5007AB521 /* LoginViewController.swift in Sources */,
 				BC4B980922DFBD4A007AB521 /* ToDoTableViewController.swift in Sources */,
 				BC4B97F322DFBB1E007AB521 /* AppDelegate.swift in Sources */,
+				BC6ED1D622E26B4A00AF54C6 /* DetailViewController.swift in Sources */,
+				BC6ED1D422E22B2A00AF54C6 /* ToDoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
